@@ -2,13 +2,22 @@
       box-sizing: border-box;
     }
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
+      font-family: "Oswald", sans-serif;
+      background: #14a8e3;
+      background: linear-gradient(90deg, rgba(20, 168, 227, 1) 0%, rgba(87, 199, 133, 1) 29%, rgba(237, 221, 83, 1) 100%);
       padding: 20px;
+      margin-top: 100px;
     }
+
     h1 {
       text-align: center;
+      font-size: 50px;
     }
+
+    .tarefa{
+        border-radius: 15px;
+        border: solid ;
+    }  
     #inputArea {
       text-align: center;
       margin-bottom: 20px;
@@ -46,9 +55,9 @@
       text-align: center;
       color: white;
     }
-    .em-aberto { background-color: #f9b233; }
-    .bid { background-color: #f58634; }
-    .em-andamento { background-color: #0077c8; }
+    .aberto { background-color: #f9b233; }
+    .negociacao{ background-color: #f58634; }
+    .andamento { background-color: #0077c8; }
     .entregue { background-color: #7ac943; }
 
     .card {

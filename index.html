@@ -14,19 +14,19 @@
 <h1>Kanban - Lista de Tarefas</h1>
 
 <div id="inputArea">
-  <input type="text" id="taskInput" placeholder="Descrição da tarefa">
-  <button onclick="addTask()">Adicionar Tarefa</button>
+  <input class="tarefa" type="text" id="taskInput" placeholder="Descrição da tarefa">
+  <button class="tarefa" onclick="addTask()">Adicionar Tarefa</button>
 </div>
 
 <div class="kanban">
-  <div class="column" id="em-aberto" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <h2 class="em-aberto">Em Aberto</h2>
+  <div class="column" id="aberto" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2 class="aberto">Em Aberto</h2>
   </div>
-  <div class="column" id="bid" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <h2 class="bid">Bid (Negociação)</h2>
+  <div class="column" id="negociacao" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2 class="negociacao">Negociação</h2>
   </div>
-  <div class="column" id="em-andamento" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <h2 class="em-andamento">Em Andamento</h2>
+  <div class="column" id="andamento" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2 class="andamento">Em Andamento</h2>
   </div>
   <div class="column" id="entregue" ondrop="drop(event)" ondragover="allowDrop(event)">
     <h2 class="entregue">Entregue</h2>
