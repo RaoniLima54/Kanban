@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Kanban - Lista de Tarefas</title>
+  
+</head>
+<body>
+
+<h1>Kanban - Lista de Tarefas</h1>
+
+<div id="inputArea">
+  <input type="text" id="taskInput" placeholder="Descrição da tarefa">
+  <button onclick="addTask()">Adicionar Tarefa</button>
+</div>
+
+<div class="kanban">
+  <div class="column" id="em-aberto" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2 class="em-aberto">Em Aberto</h2>
+  </div>
+  <div class="column" id="bid" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2 class="bid">Bid (Negociação)</h2>
+  </div>
+  <div class="column" id="em-andamento" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2 class="em-andamento">Em Andamento</h2>
+  </div>
+  <div class="column" id="entregue" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2 class="entregue">Entregue</h2>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+
+</body>
+</html>
